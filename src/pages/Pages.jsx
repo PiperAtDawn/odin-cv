@@ -9,7 +9,7 @@ import Preview from './Preview';
 function Pages() {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
+      <Route path="/odin-cv" element={<Home />} />
       <Route path="/general" element={<General />} />
       <Route path="/education" element={<Education />} />
       <Route path="/job" element={<Job/>} />
