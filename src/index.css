@@ -1,13 +1,149 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  min-height: 100vh;
+}
+
+body {
+  margin: 0;
+}
+
+:root,
+body {
+  height: 100%;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 70px;
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  padding: 10px 5px 0 5px;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.nav-button-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.nav-button-wrapper button {
+  width: 100px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+form label {
+  display: grid;
+  grid-template-columns: auto 300px;
+  column-gap: 5px;
+  align-items: center;
+}
+
+button {
+  align-self: center;
+  padding: 5px 10px;
+  width: 100px;
+  cursor: pointer;
+  border: solid 2px rgb(138, 138, 226);
+  border-radius: 5px;
+}
+
+button:hover:not(:disabled) {
+  background-color: lightblue;
+}
+
+button:disabled {
+  border-color: lightblue;
+  cursor: default;
+}
+
+.red {
+  color: red;
+}
+
+p.red {
+  text-align: center;
+}
+
+.preview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.preview-container div {
+  width: 100%;
+}
+
+.preview-container button {
+  margin-top: 10px;
+}
+
+.preview-array {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.preview-item {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  grid-gap: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 4px lightblue;
+  padding: 10px;
+}
+
+.with-delete {
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+}
+
+.preview-item button {
+  grid-row: 1 / 3;
+  grid-column: 3 / 4;
+  justify-self: end;
+}
+
+input {
+  padding: 5px 10px;
+  border: solid 2px lightblue;
+  border-radius: 5px;
 }
