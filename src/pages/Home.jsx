@@ -5,7 +5,7 @@ function Home() {
   const navigate = useNavigate();
 
   return (
-    <div>
+    <div className="home">
       <p>We will help you generate a CV!</p>
       <button
         type="button"

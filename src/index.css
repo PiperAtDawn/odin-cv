@@ -44,6 +44,26 @@ main {
   padding: 10px 5px 0 5px;
 }
 
+button {
+  align-self: center;
+  padding: 5px 10px;
+  width: 100px;
+  cursor: pointer;
+  border: solid 2px rgb(138, 138, 226);
+  border-radius: 5px;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home button {
+  width: 150px;
+  padding: 10px;
+}
+
 .form-wrapper {
   display: flex;
   flex-direction: column;
@@ -75,15 +95,6 @@ form label {
   grid-template-columns: auto 300px;
   column-gap: 5px;
   align-items: center;
-}
-
-button {
-  align-self: center;
-  padding: 5px 10px;
-  width: 100px;
-  cursor: pointer;
-  border: solid 2px rgb(138, 138, 226);
-  border-radius: 5px;
 }
 
 button:hover:not(:disabled) {
